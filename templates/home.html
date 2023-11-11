@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+ <div class="login">
+	<h1>Diabetes Prediction</h1>
+  <div class="form">
+    <form action="{{ url_for('predict_datapoint')}}" method="post" >
+      <div class="row1">
+        <div><label for="pregnant">Pregnancies: </label></div>
+        <div class="col"><input type="text" name="Pregnancies" required="required" /><br></div>
+      </div>
+      <div class="row2">
+        <div><label for="glucose">Glucose: </label></div>
+        <div class="col"><input type="text" name="Glucose" required="required" /><br></div>
+      </div>
+      <div class="row3">
+        <div><label for="bloodPressure">BloodPressure: </label></div>
+        <div class="col"><input type="text" name="BloodPressure" required="required" /><br></div>
+      </div>
+        <div class="row4">
+          <div><label for="skinThickness">SkinThickness: </label></div>
+          <div class="col"><input type="text" name="SkinThickness" required="required" /><br></div>
+        </div>
+        <div class="row5">
+          <div><label for="insulin">Insulin: </label></div>
+          <div class="col"><input type="text" name="Insulin" required="required" /><br></div>
+        </div>
+        <div class="row6">
+          <div><label for="bmi">BMI: </label></div>
+          <div class="col"><input type="text" name="BMI" required="required" /><br></div>
+        </div>
+        <div class="row7">
+          <div><label for="pedigreefuncton">DiabetesPedigreeFunction: </label></div>
+          <div class="col"><input type="text" name="DiabetesPedigreeFunction" required="required" /><br></div>
+        </div>
+        <div class="row8">
+          <div><label for="age">Age: </label></div>
+          <div class="col"><input type="text" name="Age" required="required" /><br></div>
+        </div>
+        
+
+
+        <button id="button"type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+  </div>
+<!-- <body> -->
+
+   <br>
+   <br>
+
+
+ </div>
+ {{result}}
+
+</body>
+</html>

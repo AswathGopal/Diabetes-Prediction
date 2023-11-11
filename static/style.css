@@ -1,0 +1,63 @@
+h1{
+    display: flex;
+    justify-content: center;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row1{
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+}
+.row2{
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+}
+.row3 {
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+}
+.row4 {
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+}
+.row5 {
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+}
+.row6 {
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+}
+.row7 {
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+}
+.row8 {
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+}
+/* .col{
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-color: black;
+}  */
+body {
+    background-image: url('/static/dia1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#button{
+    padding:10px;
+    margin-left: 50px;
+}

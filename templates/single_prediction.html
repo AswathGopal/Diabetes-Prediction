@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+            background-image: url('/static/dia1.jpg');
+            background-repeat: no-repeat;
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1> Person is { { result } }</h1> -->
+        <h1></h1>
+    <script>
+        let result='{{result}}'
+        console.log(result)
+        if(result=='Diabetic'){
+        document.querySelector("h1").innerHTML='You are Diabetic Consult doctor soon'
+        }
+        else{
+            document.querySelector("h1").innerHTML='Congragulations!!! you are diabetic free'
+        }
+    </script>
+    
+</body>
+</html>
